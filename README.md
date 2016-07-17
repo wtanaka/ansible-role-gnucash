@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/wtanaka/ansible-role-gnucash.svg?branch=master)](https://travis-ci.org/wtanaka/ansible-role-gnucash)
+[![CircleCI](https://circleci.com/gh/wtanaka/ansible-role-gnucash.svg?style=svg)](https://circleci.com/gh/wtanaka/ansible-role-gnucash)
+
 wtanaka.gnucash
 ================
 
