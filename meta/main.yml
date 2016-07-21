@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   author: Wesley Tanaka
-  description: KeePassX
+  description: GnuCash
   company: http://wtanaka.com/
   license: GPLv2
   min_ansible_version: 1.5.4
