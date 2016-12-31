@@ -8,10 +8,6 @@ machine:
       version:
          2.3.1
 
-dependencies:
-   pre:
-      - sudo apt-get update; sudo apt-get install ansible
-
 # CircleCI docker does not support installing fuse as of July 2016, so
 # we avoid testing on ubuntu:12.04
 test:
