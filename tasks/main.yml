@@ -1,24 +1,7 @@
 ---
-- name: install python-apt on ansible < 1.6.0 and ubuntu et al
-  sudo: yes
-  raw: >
-    if > /dev/null command -v apt-get; then
-       python -c "import apt" ||
-       (> /dev/null command -v apt-get && apt-get install -y python-apt);
-    fi
+- name: set should_run fact
+  set_fact:
+    should_run: True
 
-- name: install python-pycurl on ansible < 1.6.0 and ubuntu et al
-  sudo: yes
-  raw: >
-    if > /dev/null command -v apt-get; then
-       python -c "import pycurl" ||
-       (> /dev/null command -v apt-get && apt-get install -y python-pycurl);
-    fi
-
-- name: apt-get update
-  apt: update_cache=true cache_valid_time=3600
-  sudo: yes
-
-- name: install gnucash
-  apt: name=gnucash
-  sudo: yes
+- include: include_vars.yml
+- include: sudoorbecome.yml
